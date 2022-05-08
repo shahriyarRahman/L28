@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer directive tell Tailwind what layer those styles belong to 
+   @apply to inline any existing utility classes into your own custom CSS.
+*/
+
+@layer base {
+	/* Add any css resets e.g '@font-face', 'html' , 'body' */
+}
+
+@layer components {
+	/* Add components styles there e.g 'button' , 'list' , 'header'
+	
+     .btn{
+	    @apply p-2 bg-black text-black;
+	  } */
+}
+
+@layer utilities {
+	/* Add your own utilities 
+
+	 .your-utility {
+        property: value;
+      } */
+
+	/* Add responsive varients to your utilities
+      
+      @responsive{
+        .scroll-snap-none {
+          scroll-snap-type: none;
+        }
+        .scroll-snap-x {
+          scroll-snap-type: x;
+        }
+      } 
+
+      <div class="scroll-snap-none md:scroll-snap-x"></div> */
+}
